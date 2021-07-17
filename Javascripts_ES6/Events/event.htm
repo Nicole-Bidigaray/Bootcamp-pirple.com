@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Events JS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="log">
+            <img  id="myImg" src="https://images.unsplash.com/photo-1444212477490-ca407925329e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="">
+        </div>
+        <div id="clicky">
+            Test text
+            <button onclick="handleClick()">Click here!</button>
+        </div>
+        <div id="background">
+            <h2>I am size H2 header!</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+        <!-- <div id="div2">
+            <a href="http://google.com">Click here to go to Google</a>
+        </div> -->
+        <div id="div2">
+            <form id="myForm" method="POST">
+                <input type="text" name="" id="myInput"><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="div3">
+            <p>User is typing</p>
+            <textarea></textarea>
+        </div>
+    </body>
+    <script>
+        document.addEventListener("DOMContentLoaded", addToLog)
+        window.addEventListener("load", checkImageSize)
+
+        function addToLog() {
+            console.log("DOM content loaded and parsed!")
+            const myLog = document.getElementById("log")
+            myLog.innerHTML += "<h1>Hiiiiii</h1>"
+        }
+
+        function checkImageSize() {
+            const myImg = document.getElementById("myImg")
+            console.log("Height: " + myImg.offsetHeight + " " + "width: " + myImg.offsetWidth)
+            myImg.style.width = "500px"
+            myImg.style.height = "auto"
+            myImg.style.borderRadius = "50%"
+        }
+    </script>
+</html>

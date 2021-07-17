@@ -1,0 +1,51 @@
+#document {
+    background-color: rgb(208, 229, 247);
+  }
+
+  .text-content {
+    font-size: 32px;
+  }
+
+  .title {
+    padding-bottom: 30px;
+  }
+
+  #big-title {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 50px;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .recipe-photo {
+    width: 300px;
+  }
+
+  .ingredients {
+    list-style: none;
+  }
+
+  .ingredients li:before {
+    content: "✏️";
+    padding-right: 10px;
+  }
+
+  .steps {
+    list-style-type: upper-roman;
+  }
+
+  p > span {
+    font-style: italic;
+  }
+
+  p > span:last-child {
+    text-decoration: underline;
+  }
+
+  .span-no-styles {
+    font-style: normal;
+    text-decoration: none;
+  }

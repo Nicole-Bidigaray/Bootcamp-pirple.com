@@ -1,6 +1,6 @@
 """
 Homework Assignment #10: Importing
-Link my GitHub:
+Link my GitHub: https://github.com/Nicole-Bidigaray/Bootcamp-pirple.com/tree/master/Python_is_Easy/Homework%2310
 
 """
 import os
